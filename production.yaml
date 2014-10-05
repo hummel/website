@@ -1,0 +1,13 @@
+extends: site.yaml
+
+mode: production
+media_url: www/media
+base_url: www/
+deploy_root: deploy_production
+
+publisher:
+    ssh:
+        type: hyde.ext.publishers.ssh.SSH
+        username: jhummel
+        server: astro.as.utexas.edu
+        target: www/
