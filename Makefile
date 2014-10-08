@@ -20,4 +20,4 @@ gen-production: clean
 	hyde gen -c production.yaml
 
 publish: CV gen-production	
-	rsync -e ssh -r deploy_production/ astro.as.utexas.edu:/www/
+	rsync -e ssh -r deploy_production/ jhummel@astro.as.utexas.edu:www/

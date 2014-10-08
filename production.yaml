@@ -1,8 +1,8 @@
 extends: site.yaml
 
 mode: production
-media_url: www/media
-base_url: www/
+media_url: ./media
+base_url: .
 deploy_root: deploy_production
 
 publisher:
