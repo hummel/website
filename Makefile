@@ -7,7 +7,7 @@ content/media/pdfs/CV.pdf: CV/CV.tex
 	mkdir -p content/media/pdfs/
 	cp CV/CV.pdf content/media/pdfs/
 
-gen: CV
+gen: #CV
 	hyde gen
 
 serve: clean gen
@@ -19,5 +19,5 @@ clean:
 gen-production: clean
 	hyde gen -c production.yaml
 
-publish: CV gen-production	
+publish: gen-production	#CV
 	rsync -e ssh -r deploy_production/ jhummel@astro.as.utexas.edu:www/
