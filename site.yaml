@@ -13,7 +13,7 @@ plugins:
     - hyde.ext.plugins.textlinks.TextlinksPlugin
 context:
     data:
-        tweet_via: jhummel512
+        tweet_via: astrohummel
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2014-10-05 00:00:00
