@@ -14,7 +14,7 @@ serve: clean gen
 	hyde serve
 
 clean:
-	rm -rf deploy
+	rm -rf deploy deploy_production
 
 gen-production: clean
 	hyde gen -c production.yaml
